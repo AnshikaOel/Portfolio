@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: white;
+}
+
+#header {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: blue;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 30px;
+  font-size: 38px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: rgb(15, 227, 247);
+}
+
+.about-col1 img {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+#about {
+  padding: 80px 0;
+  color: aqua;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col1 {
+  flex-basis: 35%;
+}
+
+.about-col2 {
+  flex-basis: 60%;
+}
+
+.subtitle {
+  font-size: 60px;
+  font-weight: 600;
+  color: #f6f2f2;
+}
+
+.tabtitles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tablinks {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tablinks::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tablinks.activelinks::after {
+  width: 50%;
+}
+
+.tabcontent ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tabcontent ul li span {
+  color: #ff004f;
+  font-size: 23px;
+}
+
+#project {
+  padding: 30px 90px;
+}
+
+.projectlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 80px;
+  margin-top: 50px;
+}
+
+.projectlist div {
+  background: #434343;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 7px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+/* .projectlist div i{
+    /* font-size: 10px; */
+/* margin-bottom: 10px;
+} */
+*/ .projectlist div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.projectlist div i {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.projectlist div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.projectlist div:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+
+.work {
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.contactleft {
+  flex-basis: 35%;
+}
+
+.contactright {
+  flex-basis: 60%;
+}
+
+.contactleft p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.socialicon a {
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #686868;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.socialicon a:hover {
+  color: #ff004f;
+  transform: translateY(-10px);
+}
+
+.btn.btn2 {
+  background-color: #ff004f;
+  display: inline-block;
+  font-size: 30px;
+  color: #f6f2f2;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+form input,
+form textarea {
+  margin: 7px;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #434343;
+  font-size: 20px;
+  color: #f6f2f2;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.btn2 {
+  margin-top: 15px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #f6f2f2;
+}
+
+.resume {
+  margin: 70px;
+}
+
+#msg {
+  margin-top: 10px;
+  color: #ff004f;
+  display: block;
+  font-size: 20px;
+}
+.hide_project{
+  display: none;
+}
+#more,#less{
+  margin-left: 45%;
+}
+#nav_bar{
+  display: flex;
+}
